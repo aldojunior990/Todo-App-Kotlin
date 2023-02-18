@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    // STANDARD COLORS
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    // BACKGROUND COLORS
+    <color name="background_100">#FFFFFF</color>
+    <color name="background_200">#F9F9F9</color>
+
+    // BUTTON COLORS
+    <color name="btn_shape_color">#4B56D2</color>
+    <color name="btn_title_color">#FFFFFF</color>
+
+
+    // TEXTS COLORS
+    <color name="title_100">#1E1C1D</color>
+    <color name="title_300">#B2B2B2</color>
+    <color name="title_special">#4B56D2</color>
+
+</resources>

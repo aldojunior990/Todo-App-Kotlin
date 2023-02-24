@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:paddingHorizontal="24dp"
     android:paddingVertical="48dp"
-    tools:context=".MainActivity">
+    tools:context=".ui.main.MainActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -34,6 +34,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -50,17 +51,18 @@
             android:textSize="16sp" />
 
         <TextView
+            android:id="@+id/tvCount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/inter_bold"
-            android:text="1"
             android:textColor="@color/title_special"
             android:textSize="18sp" />
 
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCreate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -71,5 +73,14 @@
         android:textColor="@color/btn_title_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTasks"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

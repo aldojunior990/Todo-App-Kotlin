@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         MainViewModelFactory(TaskRepository(database.userDao()))
     }
     private lateinit var binding: ActivityMainBinding
-    private var tasksAdapter = TaskAdapter(this, ArrayList())
+    private lateinit var tasksAdapter: TaskAdapter
 
     private val taskListObserver = Observer<ArrayList<Task>> { handleTaskListObserver(it) }
 
@@ -33,7 +33,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         // Get All Tasks in BD
         viewModel.getALlTasks()
 
@@ -57,7 +56,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun handleTaskListObserver(it: ArrayList<Task>) {
-        tasksAdapter = TaskAdapter(this, it)
+        tasksAdapter = TaskAdapter(this, it, viewModel)
         binding.rvTasks.adapter = tasksAdapter
         binding.tvCount.text = it.size.toString()
     }
@@ -88,4 +87,5 @@ class MainActivity : AppCompatActivity() {
         dialog.setContentView(dialogBinding.root)
         dialog.show()
     }
+
 }

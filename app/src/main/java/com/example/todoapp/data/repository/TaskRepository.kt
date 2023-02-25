@@ -16,10 +16,9 @@ class TaskRepository(private val taskDao: TaskDao) {
         val tasks: ArrayList<Task> = ArrayList()
 
         tasksEntity.forEach {
-            Log.i("teste", it.title)
             tasks.add(it.toTask())
         }
-        Log.i("teste", tasks.toString())
+
         return tasks
     }
 

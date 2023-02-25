@@ -69,7 +69,6 @@
         android:background="@drawable/btn_shape"
         android:fontFamily="@font/inter_semibold"
         android:text="Nova"
-        android:textAllCaps="false"
         android:textColor="@color/btn_title_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
@@ -82,5 +81,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

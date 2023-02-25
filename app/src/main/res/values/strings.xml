@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ToDoApp</string>
+    <string name="title_error_message">Titulo Invalido</string>
 </resources>

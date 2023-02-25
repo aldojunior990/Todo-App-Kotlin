@@ -25,4 +25,7 @@
     <color name="title_300">#B2B2B2</color>
     <color name="title_special">#4B56D2</color>
 
+    // BORDER COLORS
+    <color name="border">#B2B2B2</color>
+
 </resources>
